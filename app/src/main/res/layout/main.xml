@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.keendesigns.zombdice2.ZomBDice"
+    android:background="@android:color/black">
+
+
+    <ImageView
+        android:src="@drawable/gametitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true" />
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zombgraphic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonrules"
+        android:background="@drawable/rules" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttongame"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:id="@+id/buttonexit"
+        android:background="@drawable/exit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttongame"
+        android:layout_alignTop="@+id/buttonrules"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/game" />
+
+    <CheckBox
+        android:text="Mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mute"
+        android:textSize="24sp"
+        android:layout_alignLeft="@+id/racer"
+        android:layout_above="@+id/racer"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:text="Race to win set  : 5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/racer"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/seekBar"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@id/buttonexit"
+        android:max="13"
+        android:progress="5"
+        android:layout_toRightOf="@+id/buttonrules"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:src="@drawable/gamelogoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:layout_marginTop="350dp"
+        android:id="@+id/logo" />
+
+
+    <TextView
+        android:text="Keen Designs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:src="@drawable/zombgraphb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="400dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/zombgraphic"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/robotRadioGroup"
+        android:layout_alignTop="@+id/zombgraphic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp">
+
+        <RadioButton
+            android:text="robot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioBrobot"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/radioB2play"
+            android:layout_alignStart="@+id/radioB2play"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:text="2 players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioB2play"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="33dp"
+            android:layout_below="@+id/radioBrobot"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    </RelativeLayout>

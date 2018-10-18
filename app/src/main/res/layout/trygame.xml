@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/menu">
+
+        <TextView
+            android:text="Keen Designs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Keen"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:src="@drawable/mathquest"
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:id="@+id/quest" />
+
+        <Button
+            android:text="MENU"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MENU" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:weightSum="1"
+        android:id="@+id/bonus">
+
+        <ImageView
+            android:src="@drawable/brain1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bonus1"
+            android:layout_weight="0.81" />
+
+        <ImageView
+            android:src="@drawable/hand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bonus2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:weightSum="1"
+        android:id="@+id/player">
+
+        <ImageView
+            android:src="@drawable/zombgirlc"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:id="@+id/player1" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score1"
+            android:layout_weight="1"
+            android:textSize="36sp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score2"
+            android:layout_weight="1"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:src="@drawable/zombmanc"
+            android:layout_width="100dp"
+            android:layout_height="92dp"
+            android:id="@+id/player2"
+            android:layout_marginRight="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:id="@+id/dice">
+
+        <ImageView
+            android:src="@drawable/greendice1"
+            android:layout_height="65dp"
+            android:id="@+id/die1"
+            android:layout_width="110dp" />
+
+        <ImageView
+            android:src="@drawable/yellowdice1"
+            android:layout_width="110dp"
+            android:layout_height="65dp"
+            android:id="@+id/die2" />
+
+        <ImageView
+            android:src="@drawable/reddice1"
+            android:layout_width="110dp"
+            android:layout_height="65dp"
+            android:id="@+id/die3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:weightSum="1"
+        android:id="@+id/promptln">
+
+        <TextView
+            android:text="Prompt Line....."
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:id="@+id/prompt"
+            android:layout_weight="0.08"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:id="@+id/outtally">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/gbrainn"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_width="70dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:id="@+id/ybrainn"
+            android:layout_weight="0.02"
+            android:textSize="18sp"
+            android:layout_width="70dp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbrainn"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gblastn"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yblastn"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rblastn"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:id="@+id/outcomes"
+        android:weightSum="1"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/greenbrain"
+            android:layout_height="wrap_content"
+            android:id="@+id/gbrain"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:src="@drawable/yellowbrain"
+            android:layout_height="wrap_content"
+            android:id="@+id/ybrain"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:src="@drawable/redbrain"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbrain" />
+
+        <ImageView
+            android:src="@drawable/greenblast1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gblast" />
+
+        <ImageView
+            android:src="@drawable/yellowblast1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/yblast" />
+
+        <ImageView
+            android:src="@drawable/redblast1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rblast" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:weightSum="1"
+        android:id="@+id/choicesbut">
+
+        <ImageButton
+            android:src="@drawable/drawbut"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawbut"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:src="@drawable/rollbut"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollbut"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:src="@drawable/againbut"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/againbut"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:src="@drawable/passbut"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/passbut"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:weightSum="1"
+        android:id="@+id/questout">
+
+        <ImageView
+            android:src="@drawable/calculator"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView11" />
+
+        <ImageView
+            android:src="@drawable/cross"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q1"
+            android:layout_weight="0.33" />
+
+        <ImageView
+            android:src="@drawable/tick"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q2" />
+
+        <ImageView
+            android:src="@drawable/cross"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q3"
+            android:layout_weight="0.46" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:id="@+id/question">
+
+        <TextView
+            android:text="Challenge Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mquest"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

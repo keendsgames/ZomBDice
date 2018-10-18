@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/menu"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Keen Designs"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Keen"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_weight="0.59" />
+
+        <Button
+            android:layout_height="match_parent"
+            android:id="@+id/questb"
+            android:background="@drawable/mathquest"
+            android:layout_width="78dp"
+            android:layout_weight="0.30" />
+
+        <Button
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/menub"
+            android:background="@drawable/menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:weightSum="1"
+        android:id="@+id/bonus">
+
+        <ImageView
+            android:src="@drawable/brain1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bonus1"
+            android:layout_weight="0.81" />
+
+        <ImageView
+            android:src="@drawable/hand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bonus2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:weightSum="1"
+        android:id="@+id/player">
+
+        <ImageView
+            android:src="@drawable/zombgirlc"
+            android:layout_width="111dp"
+            android:layout_height="90dp"
+            android:id="@+id/player1" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score1"
+            android:layout_weight="1"
+            android:textSize="36sp"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score2"
+            android:layout_weight="1"
+            android:textSize="36sp"
+            android:textColor="@android:color/background_light" />
+
+        <ImageView
+            android:src="@drawable/zombmanc"
+            android:layout_width="100dp"
+            android:layout_height="92dp"
+            android:id="@+id/player2"
+            android:layout_marginRight="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:id="@+id/dice">
+
+        <ImageView
+            android:src="@drawable/greendice1"
+            android:layout_height="wrap_content"
+            android:id="@+id/die1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/yellowdice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/die2"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:src="@drawable/reddice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/die3"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:weightSum="1"
+        android:id="@+id/promptln">
+
+        <TextView
+            android:text="Prompt Line....."
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:id="@+id/prompt"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:id="@+id/outtally">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/gbrainn"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_width="70dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:text="0"
+            android:layout_height="wrap_content"
+            android:id="@+id/ybrainn"
+            android:layout_weight="0.02"
+            android:textSize="18sp"
+            android:layout_width="70dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbrainn"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gblastn"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yblastn"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rblastn"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:id="@+id/outcomes"
+        android:weightSum="1"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/greenbrain"
+            android:layout_height="wrap_content"
+            android:id="@+id/gbrain"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:src="@drawable/yellowbrain"
+            android:layout_height="wrap_content"
+            android:id="@+id/ybrain"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:src="@drawable/redbrain"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbrain" />
+
+        <ImageView
+            android:src="@drawable/greenblast1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gblast" />
+
+        <ImageView
+            android:src="@drawable/yellowblast1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/yblast" />
+
+        <ImageView
+            android:src="@drawable/redblast1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rblast" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:weightSum="1"
+        android:id="@+id/choicesbut">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/drawbut"
+            android:background="@drawable/drawbut" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rollbut"
+            android:background="@drawable/rollbut"
+            android:layout_weight="0.04" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/againbut"
+            android:background="@drawable/againbut" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/passbut"
+            android:background="@drawable/passbut" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:weightSum="1"
+        android:id="@+id/questout">
+
+        <ImageView
+            android:src="@drawable/calculator"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:id="@+id/calm" />
+
+        <ImageView
+            android:src="@drawable/cross"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q1"
+            android:layout_weight="0.33" />
+
+        <ImageView
+            android:src="@drawable/tick"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q2" />
+
+        <ImageView
+            android:src="@drawable/cross"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:id="@+id/q3"
+            android:layout_weight="0.46" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:id="@+id/question">
+
+        <TextView
+            android:text="Challenge Question 1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mquest1a"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:text="Question 1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mquest1b"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark" />
+        <TextView
+            android:text="www.keendesigns.webs.com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keen1"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_light" />
+        <TextView
+            android:text="Mr. Chan (MDM4U)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keen2"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_blue_light" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
